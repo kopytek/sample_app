@@ -3,6 +3,11 @@ require 'spec_helper'
 describe PagesController do
     render_views
 
+  before(:each) do
+    # definiujemy czesc tytulu 
+    @base_title = "Strona o tytule "
+  end
+
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -11,7 +16,7 @@ describe PagesController do
     it "should have the right title" do
       get 'home'
       response.should have_selector("title",
-              :content => "Strona o tytule | home")
+              :content => @base_title + "| home")
     end
   end
 
@@ -23,7 +28,7 @@ describe PagesController do
     it "should have the right title" do
       get 'contact'
       response.should have_selector("title",
-              :content => "Strona o tytule | contact")
+              :content => @base_title +  "| contact")
     end
   end
 
@@ -35,7 +40,20 @@ describe PagesController do
     it "should have the right title" do
       get 'about'
       response.should have_selector("title",
-              :content => "Strona o tytule | about")
+              :content => @base_title + "| about")
+    end
+  end
+
+
+   describe "GET 'help'" do
+    it "should be successful" do
+      get 'help'
+      response.should be_success
+    end
+    it "should have the right title" do
+      get 'help'
+      response.should have_selector("title",
+              :content => @base_title + "| help")
     end
   end
 
