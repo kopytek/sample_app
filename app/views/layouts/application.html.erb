@@ -3,9 +3,18 @@
   <head>
     <title><%= title %></title>
     <%= csrf_meta_tag %>
-    <%= stylesheet_link_tag 'css/style', :media => 'screen' %>
+    <%= render 'layouts/stylesheets' %>  
   </head>
   <body>
-    <%= yield %>
+    <div id="dummybodyid">
+     <div class="wrapper">  
+        <%= render 'layouts/header' %>        
+        
+        <section id="intro" clas="round">
+          <%= yield %>
+        </section>
+
+     </div>
+    </div>
   </body>
 </html>

@@ -169,7 +169,7 @@ a:hover { color: #036; }
  */
 
 .wrapper {
-	width: 460px;
+	width: 880px;
 	margin: 0 auto 0 60px;
     line-height: 1.5em; /* 16px * 1.5 ==> 24px */
     padding-top: 72px; /* it's line-height * 3 */ 
@@ -191,7 +191,8 @@ a:hover { color: #036; }
 
 }
 #dummybodyid {
-	color: #444;
+	//color: #444;
+    color: #5E6066;    
     font-family: Cambria, Georgia, "Times New Roman", Times, serif;
 	
     width: 940px;
@@ -201,13 +202,13 @@ a:hover { color: #036; }
     
 }
 #dummybodyid:hover {
-    background: url(../img/grid.png) center -6px repeat-y #fff;
+    //background: url(../img/grid.png) center -6px repeat-y #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
     margin-bottom: 24px;
-    font-family: "League Gothic" !important;
+    font-family: "League Gothic", sans-serif !important;
 }
 
 p {
@@ -215,7 +216,7 @@ p {
 }
 p+p {
     //text-indent: 2em;
-    //margin-top: -24px;
+    margin-top: -24px;
 }
 h1 { 
     font-size: 2em; /* 32px ==> 32 / 16 = 2 */
@@ -235,6 +236,61 @@ h3 {
     line-height: 1.333em;/* 24px ==> 24 / 18 = 1.333 */
 }
 
+header {
+
+}
+nav {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+    float: right;
+}
+nav ul.list {
+    float: right;
+ 
+    list-style: none;
+
+}
+
+nav ul.list li {
+    float: left;
+    margin-left: 24px;
+    font-size: 1.2em;
+    
+}    
+nav ul.list li a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #777;    
+}
+nav ul.list li a:hover {
+    color: #222;
+    border-bottom: 1px solid #777;
+}
+
+a.signup_button {
+    display: block;
+    width: 160px;
+    //height: 48px;
+    border-radius: 24px;
+    background-color: #333;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    //font-weight: bold;
+    position: relative;
+    float: left;
+    top: 48px;
+    left: 390px;/* (wrapper / 2 ) - ( width / 2 ) */ 
+
+}
+a.signup_button:hover {
+     background-color: #cc2a2a;   
+    
+}    
 /**
  * Non-semantic helper classes: please define your styles before this section.
  */
