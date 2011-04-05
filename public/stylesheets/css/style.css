@@ -169,8 +169,8 @@ a:hover { color: #036; }
  */
 
 .wrapper {
-	width: 880px;
-	margin: 0 auto 0 60px;
+	width: 940px;
+	margin: 0 auto;
     line-height: 1.5em; /* 16px * 1.5 ==> 24px */
     padding-top: 72px; /* it's line-height * 3 */ 
 }
@@ -202,7 +202,7 @@ a:hover { color: #036; }
     
 }
 #dummybodyid:hover {
-    //background: url(../img/grid.png) center -6px repeat-y #fff;
+    background: url(../img/grid.png) center -6px repeat-y #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -222,6 +222,7 @@ h1 {
     font-size: 2em; /* 32px ==> 32 / 16 = 2 */
     line-height: 0.666em; /* 24px ==> 24 / 36 = 0.666 */
     font-weight: normal;
+    
 }
 h2 {
     font-size: 1.375em;/* 22px ==> 22px / 16px = 1.375 */
@@ -290,6 +291,35 @@ a.signup_button {
 a.signup_button:hover {
      background-color: #cc2a2a;   
     
+}
+#intro {
+    height: 360px;   
+}    
+footer { 
+    width: 940px;    
+    height: 72px;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 12px;
+}
+nav ul.foot_nav {
+    width: 400px;
+    //background-color: rgba(0,0,0,1);
+    background-color: red;
+    list-style: none;
+    margin: 24px auto;
+}
+nav ul.foot_nav li {
+   
+    float: left;
+    margin-right: 24px;
+}
+nav ul.foot_nav li a {
+    color: #777;
+    text-decoration: none;
+}
+nav ul.foot_nav li a:hover {
+    color: #222;
+    border-bottom: 1px solid #777;
 }    
 /**
  * Non-semantic helper classes: please define your styles before this section.
