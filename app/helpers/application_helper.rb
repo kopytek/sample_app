@@ -8,5 +8,9 @@ module ApplicationHelper
         @title   
       end
   end
+  
+  def logo
+      image_tag("rails.png", :alt => "Header Logo", :class => "round")  
+  end
 
 end
