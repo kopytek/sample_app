@@ -1,10 +1,11 @@
 <header>
-          <%= image_tag("rails.png", :alt => "Header Logo", :class => "round") %>
+          <% logo = image_tag("rails.png", :alt => "Header Logo", :class => "round") %>
+          <%= link_to logo, root_path %>
           <nav class="round">
             <ul class="list">
-              <li><%= link_to "Home", '#'%></li>
-              <li><%= link_to "Help", '#'%></li>
-              <li><%= link_to "Sign in", '#'%></li>
+              <li><%= link_to "Home", '/'%></li>
+              <li><%= link_to "Help", '/help'%></li>
+              <li><%= link_to "Sign in", '/sign_in'%></li>
                         
             </ul>
           </nav>              
