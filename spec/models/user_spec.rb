@@ -12,7 +12,7 @@ describe User do
     end
     
     it 'should create a new instance given valid attributes' do
-        User.create!(@attr)
+        User.create(@attr)
     end
     it 'should require a name' do
         user_bez_nazwy = User.new(@attr.merge(:name => ''))
@@ -102,5 +102,6 @@ describe User do
         it 'should be false if the passwords don\'t match'do
             @user.has_password?('zloooo').should be_false
         end   
-    end 
+    end
+
 end
