@@ -1,4 +1,9 @@
-<h1>
-<%= gravatar_image_tag @user.email %>
-<%= @user.name %>
-</h1>
+<div class="left">
+  <h1><%= gravatar_for @user %>
+  <p><%= @user.name %></p>
+  </h1>
+</div>
+<aside class="more_info right">
+  <p><span>Imie</span> <%= @user.name %> <br></p>
+  <p><span>Url</span> <%= link_to user_path(@user), @user %> </p>
+</aside>
