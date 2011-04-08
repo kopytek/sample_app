@@ -252,7 +252,10 @@ nav ul.list {
     list-style: none;
 
 }
-
+p > span {
+    color: #cc2a2a;
+    font-size: 1.4em;
+}
 nav ul.list li {
     float: left;
     margin-left: 24px;
