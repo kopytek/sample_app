@@ -1,0 +1,13 @@
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2> <%= pluralize(@user.errors.count, "error") %>
+     wystapily podczas zapisu </h2>
+     <p> Nastepujace problemy wystapily </p>
+     <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+     </ul>
+   </div>
+<% end %>
+        

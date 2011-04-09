@@ -190,6 +190,17 @@ a:hover { color: #036; }
     font-style: normal;
 
 }
+#error_explanation {
+    margin-bottom: 48px;
+    color: red;
+    
+}
+.success {
+    color: red;
+    margin: 24px;
+    font-size: 1.2em;
+     
+    }
 #dummybodyid {
 	//color: #444;
     color: #5E6066;    
@@ -202,7 +213,7 @@ a:hover { color: #036; }
     
 }
 #dummybodyid:hover {
-    background: url(../img/grid.png) center -6px repeat-y #fff;
+    //background: url(../img/grid.png) center -6px repeat-y #fff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -247,14 +258,19 @@ nav {
     float: right;
 }
 nav ul.list {
+    padding: 12px;
     float: right;
- 
+    background-color: rgba(0,0,0,.09);
+    border-radius: 12px;
     list-style: none;
 
 }
 p > span {
     color: #cc2a2a;
     font-size: 1.4em;
+}
+nav ul.list li:last-child {
+    margin-right: 24px;
 }
 nav ul.list li {
     float: left;
@@ -296,13 +312,13 @@ a.signup_button:hover {
     
 }
 #intro {
-    height: 360px;
+    min-height: 360px;
     width: 940px;   
 }    
 footer { 
     width: 940px;    
     height: 72px;
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0,0,0,.09);
     border-radius: 12px;
 }
 nav ul.foot_nav {
@@ -361,7 +377,29 @@ aside > p + p { margin-top: -24px; }
 aside > p > span {
     font-weight: bold;
     padding-right: 48px;
-}    
+}
+label {
+
+}
+.field {
+    margin-bottom: 24px;
+        
+    }
+.actions {
+    margin-bottom: 24px;
+}
+form {
+    //font-size: 18px;
+       
+    }
+/* id naszego formularza rejestracyjnego */
+#new_user {
+
+}
+/* id naszego przycisku 'submit' */
+#user_submit {
+    font-size: 1.1em;
+}        
 /**
  * Non-semantic helper classes: please define your styles before this section.
  */

@@ -1,8 +1,8 @@
 <h1>Przykladowa aplikacja</h1>
 <p>it's home </p>
 
-<p>W naszej bazie mamy juz <span> <%= User.count %></span> użytkowników</p>
-<p> Ostatnio dolaczyl do nas <span> <%= User.last.name %></span></p>
+<p>W naszej bazie mamy juz <span> <%= @users.count %></span> użytkowników</p>
+<p> Ostatnio dolaczyl do nas <span> <%= @last %></span></p>
 
 
 <%= link_to "Dolacz do nas!", '/signup', :class => "signup_button round" %>

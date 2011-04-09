@@ -1,2 +1,26 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Join Us!</h1>
+<%= form_for(@user) do |f| %>
+  
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name , :placeholder => 'Name or your nickname', :size => '18' %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, :placeholder => 'It will be used do sign-in' %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password , :placeholder => 'atleast 6 character, up to 20',
+                         :size => '20'%>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation, :placeholder => 'bazinga!',
+                         :size => '20'%>
+  </div>
+  <div class="actions">
+    <%= f.submit "Chce dołączyc" %>
+  </div>
+  <%= render 'shared/error_messages' %>
+<% end %>

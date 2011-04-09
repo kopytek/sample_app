@@ -11,6 +11,9 @@
         <%= render 'layouts/header' %>        
         
         <section id="intro" clas="round">
+          <% flash.each do |key, value| %>
+            <div class="flash <%= key %> "><%= value %></div>
+          <% end %>
           <%= yield %>
         </section>
         <%= render 'layouts/footer' %>
