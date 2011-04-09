@@ -27,7 +27,7 @@ describe "LayoutLinks" do
     click_link "about"
     response.should have_selector('title', :content => "about")
     click_link "help"
-    response.should have_selector( 'title', :content => "help")
+    response.should have_selector('title', :content => "help")
     click_link "contact"
     response.should have_selector('title', :content => "contact")
   end

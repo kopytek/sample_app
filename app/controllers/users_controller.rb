@@ -14,6 +14,7 @@ class UsersController < ApplicationController
         @user = User.new(params[:user])
         if @user.save
             # udalo sie zapisac usera do bazy
+            sign_in @user
             flash[:success] = "Witaj " + @user.name 
             redirect_to user_path(@user) 
             # rownie dobrze redirect_to @user bedzie dzialac

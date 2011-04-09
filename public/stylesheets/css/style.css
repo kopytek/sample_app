@@ -195,7 +195,7 @@ a:hover { color: #036; }
     color: red;
     
 }
-.success {
+.success, .error {
     color: red;
     margin: 24px;
     font-size: 1.2em;
