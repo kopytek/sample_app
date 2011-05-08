@@ -1,6 +1,6 @@
 <h1>Join Us!</h1>
 <%= form_for(@user) do |f| %>
-  
+  <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name , :placeholder => 'Name or your nickname', :size => '18' %>
