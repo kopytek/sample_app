@@ -16,11 +16,14 @@ SampleApp::Application.routes.draw do
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
-    
+  match '/cos', :to => 'users#cos'   
   match '/contact', :to => 'pages#contact'
   match '/help', :to => 'pages#help'
   match '/about', :to => 'pages#about'
- 
+  match '/users/:id', :to => 'users#show' 
+
+  match '/users/:name', :to => 'users#show'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
