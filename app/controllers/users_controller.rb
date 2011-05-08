@@ -30,4 +30,15 @@ class UsersController < ApplicationController
     @title = 'Edytuj swoje dane'
   end
   
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user])
+      flash[:success] = 'Zmiany zatwierdzone'
+      redirect_to @user
+    else 
+      @title = 'Edytuj swoje dane'
+      flash.now[:error] = 'Wypelnij wszystkie pola by zapisac zmiany'
+      render 'edit'
+    end
+  end
 end
