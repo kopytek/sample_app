@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       render 'new'
     else
       # dane poprawne, logujemy
-      # sign_in user
+      sign_in user
       redirect_to user
     end
     
