@@ -56,7 +56,11 @@ class UsersController < ApplicationController
   
   def index
     @title = 'Wszyscy'
-    @users = User.all
+    #@users = User.all
+    @users = User.paginate(:page => params[:page], :per_page => 13)
+                       #    :page_links => false)
+                      #     :previous_label => 'Less',
+                     #      :next_label => 'More')
   end
   
   def cos

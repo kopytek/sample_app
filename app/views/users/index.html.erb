@@ -1,10 +1,15 @@
 <h1> Wszyscy zgrani niemozliwie </h1>
 
+<%= will_paginate :page_links => false %>
+
 <ul class="users">
   <% @users.each do |user| %>
-    <li>
+   <!-- <li>
       <%= gravatar_for user, :size => 40 %>
       <%= link_to user.name, user %>
-    </li>
+    </li> -->
+    <%= render user %>
   <% end %>
 </ul>
+
+<%= will_paginate %>

@@ -405,6 +405,21 @@ form {
     margin-bottom: 2em;
     
 }
+
+div.pagination {
+    margin: 2em 0;
+    font-size: 1.2em;    
+}
+ul.users {
+    list-style: none;
+}
+ul.users li img {
+    margin-right: 2em;
+    
+    
+}
+
+
 /**
  * Non-semantic helper classes: please define your styles before this section.
  */
