@@ -24,7 +24,7 @@ class User < ActiveRecord::Base
     
     
     
-    # wyrazenie warunkowe do walidacji maila
+    # wyrazenie regularne do walidacji maila
     email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     
     validates :name, :presence => true,
